@@ -1,0 +1,158 @@
+@import url("https://fonts.google.com/specimen/Karla");
+
+$cyan-left: hsl(179, 62%, 43%);
+$cyan-right: hsl(179, 47%, 54%);
+$bright-yellow: hsl(71, 73%, 54%);
+$light-gray: hsl(204, 43%, 93%);
+$grayish-blue: hsl(218, 22%, 67%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif;
+}
+
+body {
+    background: $light-gray;
+    color: white;
+    font-size: 16px;
+}
+
+p {
+    font-size: 0.95rem;
+}
+
+section {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.container {
+    border: transparent;
+    padding: 1.5em;
+}
+
+.container-top {
+    margin-top: 2.5em;
+    border-top-right-radius: .25em;
+    border-top-left-radius: .25em;
+    background: white;
+    padding-bottom: 3em;
+
+    &-community {
+        color: $cyan-left;
+        margin-bottom: 0.50em;
+        font-weight: 400;
+    }
+    
+    &-30__day {
+        color: $bright-yellow;
+        margin-bottom: 0.75em;
+    }
+
+    &-access {
+        color: $grayish-blue;
+        line-height: 1.75em;
+    }
+}
+
+.container-left {
+    background: $cyan-left;
+
+    &-sub {
+        font-weight: 400;
+    }
+
+    &-value {
+        margin: .75em 0;
+    }
+
+    &-29__dollars {
+        font-weight: 400;
+        font-size: 2rem;
+    }
+
+    &-per__month {
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: .5;
+    }
+
+    &-btn {
+       text-align: center;
+       margin: 1.2em 0;
+
+    button {
+        width: 100%;
+        padding: 0.75em;
+        font-weight: 700;
+        border-radius: .25em;
+        border: transparent;
+        background: $bright-yellow;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+       }
+    }
+}
+
+.container-right {
+    border-bottom-left-radius: .25em;
+    border-bottom-right-radius: .25em;
+    background: $cyan-right;
+
+    &-why__us {
+        margin-bottom: 0.80em;
+        font-weight: 400;
+    }
+
+    ul li {
+        list-style: none;
+        margin-bottom: .2em;
+        
+    }
+}
+
+/* MOBILE */
+
+@media screen and(min-width: 800px) {
+
+    section {
+        max-width: 800px;
+    }
+
+    .container {
+    }
+
+    section:nth-child(2) {
+       display: flex;
+    }
+
+    .container-top,
+    .container-left,
+    .container-right {
+       width: 100%;
+    }
+
+    .container-left {
+        border-bottom-left-radius: .25em;
+        border-bottom-right-radius: 0;
+    }
+
+    .container-right {
+        border-bottom-left-radius: 0;
+    }
+}
+
+/* FOOTER */
+
+.attribution { 
+    text-align: center; 
+    color: black;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}

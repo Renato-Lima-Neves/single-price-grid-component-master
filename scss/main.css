@@ -1,0 +1,144 @@
+@import url("https://fonts.google.com/specimen/Karla");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  background: #e5eff5;
+  color: white;
+  font-size: 16px;
+}
+
+p {
+  font-size: 0.95rem;
+}
+
+section {
+  max-width: 500px;
+  margin: 0 auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.container {
+  border: transparent;
+  padding: 1.5em;
+}
+
+.container-top {
+  margin-top: 2.5em;
+  border-top-right-radius: .25em;
+  border-top-left-radius: .25em;
+  background: white;
+  padding-bottom: 3em;
+}
+
+.container-top-community {
+  color: #2ab2af;
+  margin-bottom: 0.50em;
+  font-weight: 400;
+}
+
+.container-top-30__day {
+  color: #c0df34;
+  margin-bottom: 0.75em;
+}
+
+.container-top-access {
+  color: #98a6bd;
+  line-height: 1.75em;
+}
+
+.container-left {
+  background: #2ab2af;
+}
+
+.container-left-sub {
+  font-weight: 400;
+}
+
+.container-left-value {
+  margin: .75em 0;
+}
+
+.container-left-29__dollars {
+  font-weight: 400;
+  font-size: 2rem;
+}
+
+.container-left-per__month {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: .5;
+}
+
+.container-left-btn {
+  text-align: center;
+  margin: 1.2em 0;
+}
+
+.container-left-btn button {
+  width: 100%;
+  padding: 0.75em;
+  font-weight: 700;
+  border-radius: .25em;
+  border: transparent;
+  background: #c0df34;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.container-right {
+  border-bottom-left-radius: .25em;
+  border-bottom-right-radius: .25em;
+  background: #53c1bf;
+}
+
+.container-right-why__us {
+  margin-bottom: 0.80em;
+  font-weight: 400;
+}
+
+.container-right ul li {
+  list-style: none;
+  margin-bottom: .2em;
+}
+
+/* MOBILE */
+@media screen and (min-width: 800px) {
+  section {
+    max-width: 800px;
+  }
+  section:nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .container-top,
+  .container-left,
+  .container-right {
+    width: 100%;
+  }
+  .container-left {
+    border-bottom-left-radius: .25em;
+    border-bottom-right-radius: 0;
+  }
+  .container-right {
+    border-bottom-left-radius: 0;
+  }
+}
+
+/* FOOTER */
+.attribution {
+  text-align: center;
+  color: black;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
